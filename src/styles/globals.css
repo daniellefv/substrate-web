@@ -1,0 +1,85 @@
+
+/*==========================| Global Style |=========================*/
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif!important;
+  -webkit-font-smoothing: antialiased;
+  color: #FFF;
+  background-color: #101010;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1rem;
+}
+
+button, a {
+  outline: none;
+  cursor: pointer;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  padding: 0 8rem 0 8rem;
+  margin-top: 2rem;
+  background-color: transparent;
+}
+
+/*==========================| MediaQuery 1020px |=========================*/
+
+@media (max-width: 1020px) {
+  html {
+    font-size: 90%;
+  }
+  section {
+    height: auto!important;
+    margin-top: 5rem;
+    padding: 6rem;
+  }
+} 
+
+/*==========================| MediaQuery 780px |=========================*/
+
+@media (max-width: 780px) {
+  html {
+    font-size: 85%;
+  }
+  section {
+    height: auto!important;
+    margin-top: 5rem;
+    padding: 2rem;
+  }
+}
+
