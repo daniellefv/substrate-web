@@ -6,7 +6,7 @@ export const HomeCallToAction = () => {
     <Banner
       title="Start your own digital garden now!"
       subtitle="it's easy, fast and free! it will only take you a few minutes!"
-      link="contact"
+      link="/contact"
       buttonLabel="Start it now!"
     />
   );

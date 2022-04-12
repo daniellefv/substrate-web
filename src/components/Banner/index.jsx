@@ -82,7 +82,7 @@ export const Banner = ({ title, subtitle, buttonLabel, link }) => {
       <div className="titleBox">
         <h1>{title}</h1>
         <h3>{subtitle}</h3>
-        <Button className="white" link={`/${link}`}>
+        <Button className="white" link={link}>
           {buttonLabel}
         </Button>
       </div>

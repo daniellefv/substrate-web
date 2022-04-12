@@ -7,6 +7,7 @@ import HomeCallToAction from './HomeCallToAction';
 import HomeImpact from './HomeImpact';
 import HomeProducts from './HomeProducts';
 import HomeSupport from './HomeSupport';
+import ComingSoonBanner from './ComingSoonBanner';
 
 export {
   NotFoundBanner,
@@ -18,4 +19,5 @@ export {
   HomeProducts,
   HomeCards,
   HomeSupport,
+  ComingSoonBanner,
 };

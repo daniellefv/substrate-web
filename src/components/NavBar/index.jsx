@@ -103,7 +103,7 @@ const Navbar = () => {
       <ul className={showMenu ? 'show' : undefined}>
         {/* <NavLink href="/">Home</NavLink> */}
         {/* <NavLink href="/">Blog</NavLink> */}
-        <Button className="outline" href="/">
+        <Button className="outline" link="/under-construction">
           Login
         </Button>
       </ul>

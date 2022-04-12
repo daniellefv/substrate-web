@@ -138,7 +138,7 @@ const Footer = () => {
       <Banner
         title="Start your own digital garden now!"
         subtitle="it's easy, fast and free"
-        link=""
+        link="/under-construction"
         buttonLabel="Start it now!"
       />
       <div className="mainBox">
@@ -149,7 +149,7 @@ const Footer = () => {
           <ul>
             {/* <NavLink href="/">Home</NavLink> */}
             {/* <NavLink href="/">Blog</NavLink> */}
-            <NavLink href="/">Login</NavLink>
+            <NavLink href="/under-construction">Login</NavLink>
           </ul>
         </div>
 
@@ -160,15 +160,10 @@ const Footer = () => {
               <a href="mailto:daniellefv@hotmail.com">daniellefv@hotmail.com</a>
             </li>
             <li>
-              <p>Lisbon - PT</p>
+              <p>Faro - Portugal</p>
             </li>
           </ul>
           <ul className="social">
-            {/* <a href="https://www.facebook.com/" target="_blank">
-              <li className="social-item">
-                <i className="fa fa-facebook"></i>
-              </li>
-            </a> */}
             <a
               href="https://www.linkedin.com/in/danielle-vendruscolo-figueiredo-027b2a114/"
               target="_blank"

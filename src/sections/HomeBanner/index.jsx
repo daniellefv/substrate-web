@@ -64,7 +64,7 @@ export const HomeBanner = () => {
             thirdWord="ENJOY THE PROCESS."
           />
           <div className="buttonsBox">
-            <Button className="outline" link="/">
+            <Button className="outline" link="/under-construction">
               Start now
             </Button>
           </div>
