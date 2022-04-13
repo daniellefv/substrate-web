@@ -67,9 +67,9 @@ export const HomeBanner = () => {
             digital garden
           </h1>
           <AniTitle
-            firstWord="SHARE YOUR LEARNING JOURNEY."
-            secondWord="START LITTLE - AND EASY."
-            thirdWord="ENJOY THE PROCESS."
+            firstTitle="SHARE YOUR LEARNING JOURNEY."
+            secondTitle="START LITTLE - AND EASY."
+            thirdTitle="ENJOY THE PROCESS."
           />
           <div className="buttonsBox">
             <Button className="outline" onClick={handleClick}>

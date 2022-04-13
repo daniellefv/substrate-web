@@ -8,27 +8,25 @@ export const AniTitleStyle = css`
   --gradient-color-4: #972bb6;
 
   > div {
-    > div {
-      position: relative;
-      margin-top: -0.5rem;
+    position: relative;
+    margin-top: -0.5rem;
 
-      h1 {
-        margin: 0;
-        font-size: 1.6rem;
-        font-weight: 400;
-        line-height: 1.8em;
-        padding-right: 1rem;
-        letter-spacing: 3px;
-        color: #1f1e1e;
-      }
-      h1:nth-of-type(2) {
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
+    h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.8em;
+      padding-right: 1rem;
+      letter-spacing: 3px;
+      color: #1f1e1e;
+    }
+    h1:nth-of-type(2) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     :nth-child(1) {
@@ -61,20 +59,6 @@ export const AniTitleStyle = css`
           var(--gradient-color-4)
         );
         animation: colorCycle3 8s infinite;
-      }
-    }
-  }
-
-  @media (max-width: 520px) {
-    > div {
-      > div {
-        position: relative;
-        margin-top: -1.2rem;
-
-        h1 {
-          font-size: 4rem;
-          letter-spacing: -4px;
-        }
       }
     }
   }
@@ -124,26 +108,20 @@ const Wrapper = styled.div`
   ${props => AniTitleStyle}
 `;
 
-export const AniTitle = ({ firstWord, secondWord, thirdWord }) => {
+export const AniTitle = ({ firstTitle, secondTitle, thirdTitle }) => {
   return (
     <Wrapper>
       <div>
-        <div>
-          <h1>{firstWord}</h1>
-          <h1>{firstWord}</h1>
-        </div>
+        <h1>{firstTitle}</h1>
+        <h1>{firstTitle}</h1>
       </div>
       <div>
-        <div>
-          <h1>{secondWord}</h1>
-          <h1>{secondWord}</h1>
-        </div>
+        <h1>{secondTitle}</h1>
+        <h1>{secondTitle}</h1>
       </div>
       <div>
-        <div>
-          <h1>{thirdWord}</h1>
-          <h1>{thirdWord}</h1>
-        </div>
+        <h1>{thirdTitle}</h1>
+        <h1>{thirdTitle}</h1>
       </div>
     </Wrapper>
   );
