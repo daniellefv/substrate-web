@@ -4,6 +4,7 @@ import { NavLink, Button } from 'components';
 import Image from 'next/image';
 import baseTheme from 'styles/theme';
 import { logo } from 'assets/images';
+import { useRouter } from 'next/router';
 
 export const NavBarStyle = css`
   z-index: 999;
@@ -88,9 +89,15 @@ const Wrapper = styled.nav`
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = React.useState(false);
+  const router = useRouter();
 
   const toggleClass = () => {
     setShowMenu(!showMenu);
+  };
+
+  const handleClick = e => {
+    e.preventDefault();
+    router.push('/under-construction');
   };
 
   return (
@@ -103,7 +110,7 @@ const Navbar = () => {
       <ul className={showMenu ? 'show' : undefined}>
         {/* <NavLink href="/">Home</NavLink> */}
         {/* <NavLink href="/">Blog</NavLink> */}
-        <Button className="outline" link="/under-construction">
+        <Button className="outline" onClick={handleClick}>
           Login
         </Button>
       </ul>

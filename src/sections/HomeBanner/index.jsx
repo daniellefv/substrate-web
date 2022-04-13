@@ -4,6 +4,7 @@ import { Button } from 'components';
 import { AniTitle, TiltBox, ImageBox } from 'components';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { layer1, layer2, layer3, layer4, layer5, layer6 } from 'assets/images';
+import { useRouter } from 'next/router';
 
 export const SectionStyle = css`
   height: 100vh;
@@ -50,6 +51,13 @@ const Wrapper = styled.section`
 `;
 
 export const HomeBanner = () => {
+  const router = useRouter();
+
+  const handleClick = e => {
+    e.preventDefault();
+    router.push('/under-construction');
+  };
+
   return (
     <Wrapper>
       <ScrollAnimation animateIn="fadeIn" duration={2} animateOnce>
@@ -64,7 +72,7 @@ export const HomeBanner = () => {
             thirdWord="ENJOY THE PROCESS."
           />
           <div className="buttonsBox">
-            <Button className="outline" link="/under-construction">
+            <Button className="outline" onClick={handleClick}>
               Start now
             </Button>
           </div>

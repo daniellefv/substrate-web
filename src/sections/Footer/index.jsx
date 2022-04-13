@@ -2,6 +2,8 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import baseTheme from 'styles/theme';
 import { NavLink, Banner } from 'components';
+import { useRouter } from 'next/router';
+import { Button } from 'components';
 
 export const SectionStyle = css`
   height: 100%;
@@ -133,14 +135,23 @@ const Wrapper = styled.section`
 `;
 
 const Footer = () => {
+  const router = useRouter();
+
+  const handleClick = e => {
+    e.preventDefault();
+    router.push('/under-construction');
+  };
+
   return (
     <Wrapper>
       <Banner
         title="Start your own digital garden now!"
         subtitle="it's easy, fast and free"
-        link="/under-construction"
-        buttonLabel="Start it now!"
-      />
+      >
+        <Button className="white" onClick={handleClick}>
+          Start it now!
+        </Button>
+      </Banner>
       <div className="mainBox">
         <div></div>
 
@@ -167,6 +178,7 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/in/danielle-vendruscolo-figueiredo-027b2a114/"
               target="_blank"
+              referrerPolicy="no-referrer"
             >
               <li className="social-item">
                 <i className="fa fa-linkedin"></i>

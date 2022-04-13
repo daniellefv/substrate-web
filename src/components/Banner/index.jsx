@@ -76,15 +76,13 @@ const Wrapper = styled.section`
   ${props => SectionStyle}
 `;
 
-export const Banner = ({ title, subtitle, buttonLabel, link }) => {
+export const Banner = ({ title, subtitle, children }) => {
   return (
     <Wrapper>
       <div className="titleBox">
         <h1>{title}</h1>
         <h3>{subtitle}</h3>
-        <Button className="white" link={link}>
-          {buttonLabel}
-        </Button>
+        {children}
       </div>
     </Wrapper>
   );

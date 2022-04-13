@@ -59,14 +59,10 @@ const Wrapper = styled.button`
   ${props => ButtonStyle}
 `;
 
-const Button = ({ children, className, link }) => {
+const Button = ({ children, className, ...rest }) => {
   return (
-    <Wrapper className={className}>
-      {link ? (
-        <a href={link}>{children}</a>
-      ) : (
-        <React.Fragment>{children}</React.Fragment>
-      )}
+    <Wrapper className={className} {...rest}>
+      {children}
     </Wrapper>
   );
 };
